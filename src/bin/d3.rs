@@ -6,8 +6,6 @@ fn main() {
     let rdr = BufReader::new(inp);
 
     let board: Vec<Vec<char>> = rdr.lines().map(|l| l.unwrap().chars().collect()).collect();
-    let nrow = board.len();
-    let ncol = board[0].len();
 
     // q1
     println!("{:?}", ntrees(&board, 3, 1));
